@@ -1,0 +1,140 @@
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--//tags -->
+	<link href="stylesheets/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="stylesheets/font-awesome.css" rel="stylesheet">
+	<!--pop-up-box-->
+	<link href="stylesheets/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<!--//pop-up-box-->
+	<!-- price range -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui1.css">
+	<!-- fonts -->
+	<link href="style1.css" rel="stylesheet">
+	<% include header %>
+	<% include nav %>
+  <% include slider %>
+
+							<div id="page">
+								<div id="content">
+						<div class="box">
+						<h2>Register here!!!</h2>
+						<form method="post" action="/register" >
+						<table cellspacing="20">
+						<tr>
+							<td>Name</td>
+							<td><input type="text" name="name" placeholder="Enter name"/></td>	
+						</tr>
+						<tr>
+							<td>Username/Email</td>
+							<td><input type="text" name="email" placeholder="Enter Email"/></td>	
+						</tr>
+						<tr>
+							<td>Password</td>
+							<td><input type="password" name="password" placeholder="Enter password"/></td>	
+						</tr>
+						<tr>
+							<td>Mobile</td>
+							<td><input type="text" name="mobile" placeholder="Enter mobile number"/></td>	
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td>
+							<textarea rows='5' cols='27' name="address" placeholder="Enter address"></textarea>
+							</td>	
+						</tr>
+						<tr>
+							<td>City</td>
+							<td>
+							<select style="width:235px;" name="city">
+								<option>Select city</option>
+								<optgroup label="Madhya Pradesh">
+								<option>Indore</option>
+								<option>Bhopal</option>
+								<option>Ujjain</option>
+								</optgroup>
+								<optgroup label="Maharastra">
+								<option>Mumbai</option>
+								<option>Pune</option>
+								<option>Nasik</option>
+								</optgroup>
+							</select>
+							</td>	
+						</tr>
+						<tr>
+							<td>Gender</td>
+							<td>
+							<input type="radio" name="gender" value="male"/> Male &nbsp;&nbsp; 
+							<input type="radio" name="gender" value="female"/> Female
+							</td>	
+						</tr>
+						<tr>
+							<td>
+							<input type="submit" value="Register" />
+							</td>	
+						</tr>
+						</table>
+						</form>
+
+						</div>
+
+<!-- <form action="#" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" placeholder="Name" name="Name" required="">
+							</div>
+							<div class="styled-input">
+								<input type="email" placeholder="E-mail" name="Email" required="">
+							</div>
+							<div class="styled-input">
+								<input type="password" placeholder="Password" name="password" id="password1" required="">
+							</div>
+							<div class="styled-input">
+								<input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2" required="">
+							</div>
+							<input type="submit" value="Sign Up">
+						</form>
+						<p>
+							<a href="#">By clicking register, I agree to your terms</a>
+						</p> -->
+
+			<!-- box section end -->
+			
+			<br class="clearfix" />
+		</div>
+
+
+		<div id="sidebar">
+			<div class="box">
+				<h3>Social Links</h3>
+				<ul class="list">
+					<li class="first"><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Gmail</a></li>
+					<li class="last"><a href="#">Youtube</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- sidebar section end -->
+
+		<br class="clearfix" />
+	</div>
+	<!-- page section end -->
+
+	
+	
+
+</div>
+
+	<!-- raper section end -->
+
+<% include footer %>
+<% include jquery %>
