@@ -1131,7 +1131,7 @@ img {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  padding: 4px;
+  padding: 0px;
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -2706,7 +2706,7 @@ fieldset[disabled] .checkbox label {
 }
 .input-sm {
   height: 30px;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;

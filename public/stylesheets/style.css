@@ -191,7 +191,7 @@ label{
     background: none;
     -webkit-appearance: none;
     outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .modal-body.modal-body-sub_agile input[type="submit"] {
     border: none;
@@ -908,7 +908,8 @@ input.checked {
 .img-deal1 h3 {
     color: #000;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 1
+0px;
 }
 .img-deal1 a{
     font-size: 18px;
@@ -4260,7 +4261,7 @@ input[type="radio"], input[type="checkbox"] {
     .contact input[type="text"], .contact input[type="email"], .contact textarea {
         font-size: 13px;
         padding: 11px 12px;
-        margin-bottom: 13px;
+        margin-bottom: 0px;
     }
     .contact input[type="submit"] {
         padding: 9px 34px;

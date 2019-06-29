@@ -1,89 +1,49 @@
+<% include header %>
+<% include nav %>
+<% include slider %>
 
-	
-	<% include header %>
-	<% include nav %>
-	<% include slider %>
 
-	<div id="page">
-		<div id="content">
-			<div class="box">
-				<h2>Welcome to Resale</h2>
-			<h2>Login page</h2>
-			</div>
+<div class="agileinfo-ads-display col-md-9">
+	<div class="wrapper">
+		<!-- first section (nuts) -->
+		<div class="product-sec1">
 
-			<!-- box section end -->
+		
+				<div id="page">
+					<div id="content">
+						<div class="box">
+							<h2>Login here!!!</h2>
 			
-			<br class="clearfix" />
-		</div>
-
-
-		<div id="sidebar">
-			<div class="box">
-				<h3>Social Links</h3>
-				<ul class="list">
-					<li class="first"><a href="#">Facebook</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Instagram</a></li>
-					<li><a href="#">Gmail</a></li>
-					<li class="last"><a href="#">Youtube</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- sidebar section end -->
-
-		<br class="clearfix" />
-	</div>
-	<!-- page section end -->
-
-
-	<form action="#" method="post">
-		<div class="styled-input agile-styled-input-top">
-			<input type="text" placeholder="User Name" name="Name" required="">
-		</div>
-		<div class="styled-input">
-			<input type="password" placeholder="Password" name="password" required="">
-		</div>
-		<input type="submit" value="Login">
-	</form>
-
-</div> 
-
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-	<div class="modal-dialog">
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-			</div>
-			<div class="modal-body modal-body-sub_agile">
-				<div class="main-mailposi">
-					<span class="fa fa-envelope-o" aria-hidden="true"></span>
-				</div>
-				<div class="modal_body_left modal_body_left1">
-					<h3 class="agileinfo_login">Login </h3>
-					<p>
-						Login now, Let's start your Grocery Shopping. Don't have an account?
-						<a href="#" data-toggle="modal" data-target="#myModal2">
-							Login Now</a>
-					</p>
-					<form action="#" method="post">
-						<div class="styled-input agile-styled-input-top">
-							<input type="text" placeholder="User Name" name="Name" required="">
+							<font color="orange"><%= output %></font>
+			
+							<form method="post" action="/login">
+								<table cellspacing="20">
+									<tr>
+										<td>Username/Email</td>
+										<td><input type="text" name="email" placeholder="Enter Email" /></td>
+									</tr>
+									<tr>
+										<td>Password</td>
+										<td><input type="password" name="password" placeholder="Enter password" /></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="submit" value="Login" />
+										</td>
+									</tr>
+								</table>
+							</form>
 						</div>
-						<div class="styled-input">
-							<input type="password" placeholder="Password" name="password" required="">
-						</div>
-						<input type="submit" value="Login">
-					</form>
-					<div class="clearfix"></div>
+					</div>
 				</div>
-				<div class="clearfix"></div>
-			</div>
+		
+
+			<div class="clearfix"></div>
 		</div>
-		<!-- //Modal content-->
+		<!-- //first section (nuts) -->
+		</div>
 	</div>
 </div>
 
-	<!-- raper section end -->
 
 <% include footer %>

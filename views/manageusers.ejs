@@ -1,0 +1,65 @@
+<% include header %>
+<% include adminnav %>
+
+<div id="page">
+
+<center>
+<h1>View and Manage Users</h1>	
+<br>
+<table cellspacing="5">
+<tr>
+<th>RegId</th>
+<th>Name</th>
+<th>Email</th>
+<th>Mobile</th>
+<th>Address</th>
+<th>City</th>
+<th>Gender</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<% for(let i in result) {%>
+<tr>
+  <td><%= result[i].regid %></td>
+  <td><%= result[i].name %></td>
+  <td><%= result[i].email %></td>
+  <td><%= result[i].mobile %></td>
+  <td><%= result[i].address %></td>
+  <td><%= result[i].city %></td>
+  <td><%= result[i].gender %></td>
+  <% if(result[i].status) { %>
+  <td>
+  <a href="/admin/manageuserstatus?s=block&regid=<%= result[i].regid %>" title="Block User">
+  <img src="../images/block.jpeg" height="70" width="100" />
+  </a>
+  </td>
+  <% } else { %>
+  <td>
+    <a href="/admin/manageuserstatus?s=unblock&regid=<%= result[i].regid %>" title="Un-Block User">
+  <img src="../images/unblock.jpeg" height="70" width="100" />
+  </a>
+  </td>
+  <% } %>
+  
+  <td>
+    <a href="/admin/manageuserstatus?s=delete&regid=<%= result[i].regid %>" title="Delete User">
+  <img src="../images/delete.png" height="70" width="100" />
+  </a>
+  </td>	
+</tr>
+<tr><td colspan="9"><hr></td></tr>
+<% } %>
+
+</table>
+
+
+</center>
+
+</div>
+
+<% include footer %>
+
+
+
+
